@@ -95,7 +95,7 @@
     }
       
       .mobile-nav-toggle .bar {
-        width: 6vw;
+        width: clamp(24px, 6vw, 6rem);
         height: 3px;
         background-color: #333;
         transition: all 100ms ease-in-out;
@@ -108,7 +108,7 @@
         transition: all 100ms ease-in-out;
         transform: rotate(45deg);
         transform-origin: top left;
-        width: 6vw;
+        width: clamp(26px, 6vw, 6rem);
       }
       
       .mobile-nav-toggle.active .bar:nth-child(2) {
@@ -122,7 +122,7 @@
          transition: all 100ms ease-in-out;
         transform: rotate(-45deg);
         transform-origin: bottom left;
-        width: 6vw;
+        width: clamp(26px, 6vw, 6rem);
       }  
 }
 
