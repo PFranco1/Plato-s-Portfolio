@@ -104,21 +104,21 @@
         cursor: pointer;
       }
       
-      .mobile-nav-toggle.active .bar:nth-child(2) {
+      .mobile-nav-toggle.active .bar:nth-child(1) {
         transition: all 100ms ease-in-out;
         transform: rotate(45deg);
         transform-origin: top left;
         width: 26px;
       }
       
-      .mobile-nav-toggle.active .bar:nth-child(3) {
+      .mobile-nav-toggle.active .bar:nth-child(2) {
         transition: all 100ms ease-in-out;
         transform: rotate(0deg);
         transform-origin: center;
          width: 0;
       }
       
-      .mobile-nav-toggle.active .bar:nth-child(4) {
+      .mobile-nav-toggle.active .bar:nth-child(3) {
          transition: all 100ms ease-in-out;
         transform: rotate(-45deg);
         transform-origin: bottom left;
