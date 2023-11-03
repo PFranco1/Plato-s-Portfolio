@@ -15,12 +15,4 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
 });
 
-  
-  
-window.addEventListener('load', function () {
-  const fadeElements = document.querySelectorAll('.fade');
 
-  fadeElements.forEach((fadeElement, index) => {
-      fadeElement.classList.add('animate-fade');
-  });
-});

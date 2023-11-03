@@ -284,8 +284,8 @@ body {
     overflow: hidden;
   }
   body:not(.home) main{
-    animation: animate 1s ease-in forwards;
-    animation-duration: 1s; /* Adjust the animation duration as needed */
+    animation: animate 0s ease-in forwards;
+    animation-duration: 0s; /* Adjust the animation duration as needed */
   }
   
   /* Page-specific styles */
