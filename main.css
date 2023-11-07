@@ -107,7 +107,7 @@
         transition: all 100ms ease-in-out;
         transform: rotate(45deg);
         transform-origin: top left;
-        width: 95%;
+        width: 92%;
       }
       
       .mobile-nav-toggle.active .bar:nth-child(2) {
@@ -121,7 +121,7 @@
          transition: all 100ms ease-in-out;
         transform: rotate(-45deg);
         transform-origin: bottom left;
-        width: 95%;
+        width: 92%;
       }  
 }
 
@@ -276,7 +276,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     background-color: mistyrose;
     transform: scale(0, 0);
@@ -295,13 +295,17 @@ body {
   
   body.resume main {
     background-color: lightgreen; /* Change to your desired background color */
+    display: flex;
+
   }
   
   body.contact main {
     background-color: lightsalmon; /* Change to your desired background color */
   }
+
   .content {
     width: 100%;
+    padding: 2rem;
     text-align: center;
     overflow-y: auto;
   }
