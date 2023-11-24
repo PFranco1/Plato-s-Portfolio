@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background: rgb(54, 54, 52);
     display: flex;
     justify-content: center;
@@ -41,7 +40,7 @@
 @supports (backdrop-filter: blur(1rem)){
     .primary-navigation{
         background: hsla(0, 0%, 100%, 0.3);
-        backdrop-filter: blur(0.1rem);
+        backdrop-filter: blur(0.9rem);
     }
 }
 
@@ -80,7 +79,7 @@
     }
 
     .mobile-nav-toggle{
-        position: absolute;
+        position: fixed;
         background: transparent;
         border: 0;
         z-index: 9999;
@@ -281,7 +280,6 @@ body {
     background-color: mistyrose;
     transform: scale(0, 0);
     animation: animate 1s ease-in forwards 2s;
-    overflow: hidden;
   }
   body:not(.home) main{
     animation: animate 0s ease-in forwards;
