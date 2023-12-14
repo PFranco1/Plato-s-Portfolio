@@ -34,7 +34,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background: hsla(0, 0%, 100%, 0.3);
+    background: hsla(0, 0%, 100%, 0.80);
 }
 
 @supports (backdrop-filter: blur(1rem)){
@@ -89,7 +89,7 @@
         height: 22px;
         width: 40px;
         top: 35px;
-        right: 55px;
+        right: 35px;
     }
       
       .mobile-nav-toggle .bar {
