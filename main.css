@@ -34,7 +34,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background: hsla(0, 0%, 100%, 0.90);
+    background: hsla(0, 0%, 100%, 1);
 }
 
 @supports (backdrop-filter: blur(1rem)){
