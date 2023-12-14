@@ -301,10 +301,8 @@ body {
   }
 
   .content {
-    width: 100%;
     padding: 2rem;
     text-align: center;
-    overflow-y: auto;
   }
 
   @keyframes animate {
