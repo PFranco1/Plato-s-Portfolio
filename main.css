@@ -139,7 +139,9 @@
 
 /* background area*/
 body {
+    overflow: auto;
     height:fit-content;
+    background-color:hsla(0, 2%, 33%, 0.3);
  }
 
 /*text intro*/
