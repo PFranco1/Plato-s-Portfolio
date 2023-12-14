@@ -15,7 +15,7 @@
 /* nav bar*/
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
+    gap: var(--gap);
 }
 
 
@@ -57,15 +57,15 @@
     display: none;
 }
 
-@media (max-width: 35em){
+@media (max-width: 560px){
     /*holds page together*/
     .primary-navigation{
-        --gap: 2.5em;
+        --gap: 40px;
 
         position: fixed;
         z-index: 1000;
-        inset: 0 0 0 30%;
-    
+        inset: 0 0 0 0%;
+        text-align: center;
 
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
@@ -75,7 +75,7 @@
     }
 
     .primary-navigation[data-visible="true"] {
-        transform: translateX(30%);
+        transform: translateX(0%);
     }
 
     .mobile-nav-toggle{
@@ -124,13 +124,13 @@
       }  
 }
 
-@media (min-width: 35em) and (max-width: 55em){
+@media (min-width: 560px) and (max-width: 55em){
     .primary-navigation a > [aria-hidden]{
         display: none;
     }  
 }
 
-@media (min-width: 35em){
+@media (min-width: 560px){
     .primary-navigation{
         padding-block: 2rem;
         padding-inline: clamp(3rem,10vw, 10rem);
