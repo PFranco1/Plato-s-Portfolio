@@ -93,7 +93,7 @@
     }
       
       .mobile-nav-toggle .bar {
-        width: 100%;
+        width: 25px;
         height: 3px;
         background-color: #333;
         transition: all 100ms ease-in-out;
