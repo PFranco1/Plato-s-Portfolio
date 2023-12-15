@@ -146,7 +146,7 @@ body {
 /*text intro*/
 .TI {
     font-family: "Montserrat Medium";
-    max-width: 560px;
+    width: clamp(70%, 560px, 1280px);
     padding: 32px;
     text-align: center;
     transform: scale(0.94);
