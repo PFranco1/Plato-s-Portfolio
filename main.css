@@ -278,7 +278,7 @@ body {
     align-items: center;
     background-color: mistyrose;
     transform: scale(0, 0);
-    animation: animate 1s ease-in forwards 2s;
+    animation: animate .9s ease-in forwards 2.5s;
   }
   body:not(.home) main{
     animation: animate 0s ease-in forwards;
@@ -311,10 +311,10 @@ body {
 
   @keyframes animate {
     0% {
-        transform: scale(0, 0.0005);
+        transform: scale(.9, 0.00005);
       }
       50% {
-        transform: scaleY(0.005);
+        transform: scale(1, 0.0005);
       }
       100% {
         transform: scale(1, 1);
