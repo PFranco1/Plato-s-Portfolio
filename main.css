@@ -139,15 +139,14 @@
 
 /* background area*/
 body {
-    overflow: auto;
     background-color:hsla(0, 2%, 33%, 0.3);
  }
 
 /*text intro*/
 .TI {
     font-family: "Montserrat Medium";
-    max-width: 40ch;
-    padding: 2rem;
+    max-width: 520px;
+    padding: 32px;
     text-align: center;
     transform: scale(0.94);
     animation: scale 10s forwards cubic-bezier(0.5, 1, 0.89, 1);
