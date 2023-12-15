@@ -146,7 +146,7 @@ body {
 /*text intro*/
 .TI {
     font-family: "Montserrat Medium";
-    width: clamp(70%, 560px, 1280px);
+    width: clamp(70%, 520px, 1280px);
     padding: 32px;
     text-align: center;
     transform: scale(0.94);
@@ -287,6 +287,13 @@ body {
   
   /* Page-specific styles */
   body.projects main {
+    position: absolute;
+    top: 0;
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: lightblue; /* Change to your desired background color */
   }
   
