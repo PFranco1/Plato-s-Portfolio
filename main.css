@@ -70,12 +70,12 @@
         flex-direction: column;
         padding: min(300px, 160px) 32px;
 
-        transform: translateX(100%);
+        transform: translateX(0%);
         transition: transform 250ms ease-out;
     }
 
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
+    .primary-navigation[data-visible="false"] {
+        transform: translateX(100%);
     }
 
     .mobile-nav-toggle{
@@ -140,6 +140,7 @@
 /* background area*/
 body {
     background-color:hsla(0, 2%, 33%, 0.3);
+    overflow-x: hidden;
  }
 
 /*text intro*/
@@ -297,6 +298,10 @@ body {
   
   body.contact main {
     background-color: lightsalmon; /* Change to your desired background color */
+  }
+
+  body.index main{
+    overflow-x: hidden;
   }
 
   .content {
