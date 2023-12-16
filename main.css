@@ -135,7 +135,7 @@
         transition: all 100ms ease-in-out;
         transform: rotate(45deg);
         transform-origin: top left;
-        width: 26.5px;
+        width: 27px;
       }
       
       .mobile-nav-toggle.active .bar:nth-child(2) {
@@ -149,7 +149,7 @@
          transition: all 100ms ease-in-out;
         transform: rotate(-45deg);
         transform-origin: bottom left;
-        width: 26.5px;
+        width: 27px;
       }  
 }
 
