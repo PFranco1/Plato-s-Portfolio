@@ -36,11 +36,40 @@
     margin: 0;
     background: hsla(0, 0%, 100%, .95);
 }
-
+.contact-info{
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  text-decoration: none;
+}
+.contact-info a{
+  color: #000000;
+  text-decoration: none;
+}
+.misc-text{
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.bottom-banner-background{
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-block: 28px;
+  padding-inline: clamp(50px,60px, 200px);
+  bottom: clamp(0px, 10px, 40px);
+  background: hsla(0, 0%, 100%, .95);
+}
 @supports (backdrop-filter: blur(1rem)){
     .primary-navigation{
         background: hsla(0, 0%, 100%, 0.3);
         backdrop-filter: blur(0.9rem);
+    }
+    .bottom-banner-background{
+      background: hsla(0, 0%, 100%, 0.3);
+      backdrop-filter: blur(0.9rem);
     }
 }
 
@@ -51,7 +80,7 @@
 
 .primary-navigation a > [aria-hidden="true"]  {
     font-weight: 700;
-    margin-inline-end: 0.75em;
+    margin-inline-end: 12px;
 }
 .mobile-nav-toggle {
     display: none;
@@ -132,7 +161,7 @@
 
 @media (min-width: 560px){
     .primary-navigation{
-        padding-block: 2rem;
+        padding-block: 32px;
         padding-inline: clamp(3rem,10vw, 10rem);
     }
 }
@@ -281,6 +310,12 @@ body {
     transform: scale(0, 0);
     animation: animate .9s ease-in forwards 2.5s;
   }
+  @media screen and (orientation: landscape){
+    main {
+      height: 150vh;
+    }
+  }
+  
   body:not(.home) main{
     animation: animate 0s ease-in forwards;
     animation-duration: 0s; /* Adjust the animation duration as needed */
@@ -313,7 +348,7 @@ body {
   }
 
   .content {
-    padding: 2rem;
+    padding: 10px;
     text-align: center;
   }
 
@@ -338,7 +373,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-
 
   
   @keyframes fadeIn {
