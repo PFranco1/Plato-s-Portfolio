@@ -310,7 +310,7 @@ body {
     transform: scale(0, 0);
     animation: animate .9s ease-in forwards 2.5s;
   }
-  @media screen and (max-height: 800px) and (orientation: landscape){
+  @media screen and (max-height: 700px) and (orientation: landscape){
     main {
       height: 150vh;
     }
