@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@font-face{
+  font-family:"Inter-Regular";
+  src: url("./Inter-4.0/web/Inter-Regular.woff2")
+}
+
+
 
 .loader-wrapper{
     position: fixed;
@@ -34,7 +40,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background: hsla(0, 0%, 100%, .95);
+    background: #0084bf;
 }
 .contact-info{
   font-size: 16px;
@@ -45,42 +51,44 @@
   text-decoration: none;
 }
 .contact-info a{
-  color: #000000;
+  color: #fff;
   text-decoration: none;
 }
 .misc-text{
   font-size: 16px;
+  font-family: "Inter-Regular";
   padding-bottom: 10px;
+  color: #fff
 }
 .bottom-banner-background{
   position: absolute;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-block: 28px;
-  padding-inline: clamp(50px,60px, 200px);
-  bottom: clamp(0px, 10px, 40px);
-  background: hsla(0, 0%, 100%, .95);
+  padding-block: 16px;
+  padding-inline: clamp(50px,100vw, 100vw);
+  bottom: clamp(0%, 0%, 50px);
+  background: #0084bf;
 }
 @supports (backdrop-filter: blur(1rem)){
     .primary-navigation{
-        background: hsla(0, 0%, 100%, 0.3);
-        backdrop-filter: blur(0.9rem);
+        background: hsla(199, 100%, 37%, .85);
+        backdrop-filter: blur(0.4rem);
     }
     .bottom-banner-background{
-      background: hsla(0, 0%, 100%, 0.3);
-      backdrop-filter: blur(0.9rem);
+      background: hsla(199, 100%, 37%, .85);
+      backdrop-filter: blur(0.4rem);
     }
 }
 
 .primary-navigation a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #fff;
 }
 
 .primary-navigation a > [aria-hidden="true"]  {
-    font-weight: 700;
     margin-inline-end: 12px;
+    font-family: "Inter-Regular";
 }
 .mobile-nav-toggle {
     display: none;
@@ -89,6 +97,7 @@
 @media (max-width: 560px){
     /*holds page together*/
     .primary-navigation{
+
         --gap: 40px;
 
         position: fixed;
@@ -156,25 +165,27 @@
 @media (min-width: 560px) and (max-width: 55em){
     .primary-navigation a > [aria-hidden]{
         display: none;
+        font-family: "Inter-Regular";
     }  
 }
 
 @media (min-width: 560px){
     .primary-navigation{
-        padding-block: 32px;
-        padding-inline: clamp(3rem,10vw, 10rem);
+        padding-block: 23px;
+        padding-inline: clamp(3rem,100vw, 100vw);
+        font-family: "Inter-Regular";
     }
 }
 
 /* background area*/
 body {
-    background-color:hsla(0, 2%, 33%, 0.3);
+    background-color:#0084bf;
     overflow-x: hidden;
  }
 
 /*text intro*/
 .TI {
-    font-family: "Montserrat Medium";
+    font-family: "Inter-Regular";
     width: clamp(60%, 400px, 1280px);
     padding: 32px;
     text-align: center;
@@ -275,7 +286,8 @@ body {
   }
 
 .mission{
-    font-family: 'Poppins';font-size: 22px;
+  font-family: "Inter-Regular";
+  font-size: 22px;
 }
 
  /* content area*/
@@ -289,8 +301,9 @@ body {
   }
   
   h2 {
-    color: white;
+    color: rgba(255, 255, 255, 0.444);
     opacity: 0;
+    font-family: "Inter-Regular";
     font-size: 5rem;
     animation: fadeIn 2s ease forwards;
   }
@@ -301,18 +314,18 @@ body {
     position: absolute;
     overflow-x: hidden;
     top: 0;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: mistyrose;
+    background-color: #0099e0;
     transform: scale(0, 0);
     animation: animate .9s ease-in forwards 2.5s;
   }
   @media screen and (max-height: 700px){
     main {
-      height: 150vh;
+      height: 200vh;
     }
   }
   
@@ -340,7 +353,8 @@ body {
   }
   
   body.contact main {
-    background-color: lightsalmon; /* Change to your desired background color */
+    background-color: #0099e0; /* Change to your desired background color */
+    height: 100vh;
   }
 
   body.index main{
@@ -348,8 +362,96 @@ body {
   }
 
   .content {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
+  }
+
+  .image{
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 416px;
+    padding: 0px;
+  }
+ 
+  .contactcontainer{
+    font-family:"Inter-Regular";
+    width: 80%;
+    margin: 50px, auto;
+  }
+
+  .contact-box{
+    display: flex;
+    background: #fff;
+  }
+  .contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+  }
+  .contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #1c00b5;
+    color: #fff;
+  }
+  .contactcontainer h1{
+    margin-bottom: 40px;
+  }
+  .contactcontainer p{
+    margin-bottom: 40px;
+  }
+  .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .input-row .input-group{
+    flex-basis: 45%;
+  }
+  input{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+  }
+  textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .contactcontainer label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+  }
+  .contactcontainer button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+  }
+  .contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .contactcontainer tr td:first-child{
+    padding-right: 20px;
+  }
+  .contactcontainer tr td{
+    padding-top: 40px;
   }
 
   @keyframes animate {

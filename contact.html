@@ -7,6 +7,7 @@
     <title>Plato Franco</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="server.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -16,9 +17,6 @@
         </div>
         <main>
             <div class="content">
-            </div>
-            <div>
-                <img src="Images/logo.png" class="logo">
             </div>
             <header class="primary-header flex">
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -51,8 +49,64 @@
                     </ul>
                 </nav>
             </header>
-            <h1 style="text-align:center;">Plato's Website - Contact</h1>
-            <p style="text-align:center;">Web information</p>
+            <div class="contactcontainer">
+                <h1>Contact Me</h1>
+                <p>Feel free to contact me for any information or questions you may have about me.</p>
+                <div class="contact-box">
+                    <div class="contact-left">
+                        <h3>Send your request</h3>
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" id="name" placeholder="John Doe">
+                                </div>
+                                <div class="input-group">
+                                    <label>Phone</label>
+                                    <input type="text" id="phone" placeholder="(123)456-7890">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="text" id="email" placeholder="example@mail.com">
+                                </div>
+                                <div class="input-group">
+                                    <label>Subject</label>
+                                    <input type="text" id="subject" placeholder="Content">
+                                </div>
+                            </div>
+                            <label>Message</label>
+                            <textarea rows="5" id="body" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="contact-right">
+                        <h3>Reach us</h3>
+                        <table>
+                            <tr>
+                                <td>Email</td>
+                                <td>pfranco5@utexas.edu</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>(512)657-5778</td>
+                            </tr>
+                            <tr>
+                                <td>Contact</td>
+                                <td>Contact me for any of the following:
+                                    <ul>
+                                        <li>Wiki Article Inquires</li>
+                                        <li>Web Development Inquires</li>
+                                        <li>Financial Optimization Inquires</li>
+                                        <li>Relevant Job Oppertunities</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
             <div class="bottom-banner-background">
                 <h3 class="misc-text">
                     Contact Info

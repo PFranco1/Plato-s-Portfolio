@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
+@font-face{
+  font-family:"Inter-Black";
+  src: url("./Inter-4.0/web/Inter-Bold.woff2")
+}
+
+
+
+.mastercontainer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .box {
+    width: 5em;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+
+    .title {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 50px;
+     
+
+      .block {
+        width: 0%;
+        z-index: 9999;
+        height: inherit;
+        background: #009ae0;
+        position: absolute;
+        animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
+        display: flex;
+      }
+
+      .flyinh1 {
+        font-family: 'Inter-Black';
+        color: #fff;
+        font-size: 75px;
+        -webkit-animation: mainFadeIn 1s forwards;
+        -o-animation: mainFadeIn 1s forwards;
+        animation: mainFadeIn 1s forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+
+        span {
+          width:0px;
+          height: 0px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+
+          
+          -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation-delay: 2s;
+          margin-left: 5px;
+          margin-top: -10px;
+          position: absolute;
+          bottom: 13px;
+          right: -12px;
+
+        }
+      }
+    }
+  }
+      .box2 {
+        width: 7em;
+        height: 30vh;
+        top:3em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+    
+        .title {
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 50px;
+          
+    
+          .block2 {
+            width: 0%;
+            height: inherit;
+            background: #009ae0;
+            z-index: 9999;
+            position: absolute;
+            animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
+            display: flex;
+          }
+    
+          .flyinh12 {
+            font-family: 'Inter-Black';
+            color: #fff;
+            font-size: 75px;
+            -webkit-animation: mainFadeIn 1s forwards;
+            -o-animation: mainFadeIn 1s forwards;
+            animation: mainFadeIn 1s forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+            display: flex;
+            align-items: baseline;
+            position: relative;
+    
+            span {
+              width:0px;
+              height: 0px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+    
+              
+              -webkit-animation: load .6s cubic-bezier(.74, .06, .4, .92) forwards;
+              animation: popIn .8s cubic-bezier(.74, .06, .4, .92) forwards;
+              animation-delay: 1s;
+              margin-left: 5px;
+              margin-top: -10px;
+              position: absolute;
+              bottom: 13px;
+              right: -12px;
+    
+            }
+          }
+        }
+      }
+      .box3 {
+        width: 10em;
+        height: 30vh;
+        top:6em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+    
+        .title {
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 50px;
+    
+          .block3 {
+            width: 0%;
+            height: inherit;
+            z-index: 9999;
+            background: #009ae0;
+            position: absolute;
+            animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
+            display: flex;
+          }
+    
+          .flyinh13 {
+            font-family: 'Inter-Black';
+            color: #fff;
+            font-size: 75px;
+            -webkit-animation: mainFadeIn 1s forwards;
+            -o-animation: mainFadeIn 1s forwards;
+            animation: mainFadeIn 1s forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
+            display: flex;
+            align-items: baseline;
+            position: relative;
+    
+            span {
+              width:0px;
+              height: 0px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+    
+              
+              -webkit-animation: load .6s cubic-bezier(.74, .06, .4, .92) forwards;
+              animation: popIn .8s cubic-bezier(.74, .06, .4, .92) forwards;
+              animation-delay: 1s;
+              margin-left: 5px;
+              margin-top: -10px;
+              position: absolute;
+              bottom: 13px;
+              right: -12px;
+    
+            }
+          }
+        }
+      }
+      .box4 {
+        width: 2em;
+        height: 30vh;
+        top:9em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left:10px;
+    
+        .title {
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 50px;
+    
+          .block4 {
+            width: 0%;
+            height: inherit;
+            z-index: 9999;
+            background: #009ae0;
+            position: absolute;
+            animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
+            display: flex;
+          }
+    
+          .flyinh14 {
+            font-family: 'Inter-Black';
+            color: #fff;
+            font-size: 75px;
+            -webkit-animation: mainFadeIn 1s forwards;
+            -o-animation: mainFadeIn 1s forwards;
+            animation: mainFadeIn 1s forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+            display: flex;
+            align-items: baseline;
+            position: relative;
+          }
+        }
+      }
+      .box5 {
+        width: 13em;
+        height: 30vh;
+        top:12em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+    
+        .title {
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 50px;
+          
+    
+          .block5 {
+            width: 0%;
+            height: inherit;
+            z-index: 9999;
+            background: #009ae0;
+            position: absolute;
+            animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
+            display: flex;
+            
+          }
+    
+          .flyinh15 {
+            font-family: 'Inter-Black';
+            color: #fff;
+            font-size: 75px;
+            -webkit-animation: mainFadeIn 1s forwards;
+            -o-animation: mainFadeIn 1s forwards;
+            animation: mainFadeIn 1s forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
+            display: flex;
+            align-items: baseline;
+            position: relative;
+          }
+        }
+      }
+    .role {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-top: -10px;
+
+      .block {
+        width: 0%;
+        height: inherit;
+        background: #e91e63;
+        position: absolute;
+        animation: secBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 1s;
+        display: flex;
+      }
+
+      .flyinp {
+        animation: secFadeIn 1s forwards;
+        animation-delay: 2s;
+        opacity: 0;
+         font-weight: 400;
+        font-family: 'Lato';
+        color: #000;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
+    }
+}
+
+
+
+
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    right: 0;
+
+  }
+  30% {
+    width: 100%;
+    right: 0;
+
+  }
+  100% {
+    width: 0%;
+    right: 100%;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 1;
+    left: 0vw;
+  }
+  50% {
+    opacity: 1;
+    left: 8vw;
+  }
+  100% {
+    opacity: 1;
+    left: 8vw;
+  }
+}
+
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    right: 0;
+
+  }
+  50% {
+    width: 100%;
+    right: 0;
+
+  }
+  100% {
+    width: 0;
+    right: 0;
+  }
+}
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
