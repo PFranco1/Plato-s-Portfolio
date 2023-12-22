@@ -9,38 +9,47 @@
 
 
 .mastercontainer{
-  position: relative;
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+@media (max-width: 560px){
+  .mastercontainer{
+    width: 100%;
+  }
+
 }
 
 .container2 {
-  display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
-  width: 100%;
-
+}
   .box {
-    width: 5em;
-    height: 30vh;
+    width: 7em;
+    height: 3em;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin:0px;
+  }
 
     .title {
       width: 100%;
       position: relative;
       display: flex;
       align-items: center;
-      height: 50px;
-     
-
+      height: 4em;
+    }
+      .mainblock{
+        width: 100%;
+        position: absolute;
+        height: 50%;
+        display: flex;
+        left: 0px;
+        background: #009ae0;
+      }
       .block {
-        width: 0%;
+        width: 40%;
+        left: -10px;
         z-index: 9999;
         height: inherit;
         background: #009ae0;
@@ -53,55 +62,36 @@
         font-family: 'Inter-Black';
         color: #fff;
         font-size: 75px;
-        -webkit-animation: mainFadeIn 1s forwards;
-        -o-animation: mainFadeIn 1s forwards;
-        animation: mainFadeIn 1s forwards;
-        animation-delay: 0.3s;
+        -webkit-animation: mainFadeIn 0.75s ease forwards;
+        -o-animation: mainFadeIn 0.75s ease forwards;
+        animation: mainFadeIn 0.75s ease forwards;
+        animation-delay: 0.2s;
         opacity: 0;
         display: flex;
         align-items: baseline;
         position: relative;
-
-        span {
-          width:0px;
-          height: 0px;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-
-          
-          -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
-          animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
-          animation-delay: 2s;
-          margin-left: 5px;
-          margin-top: -10px;
-          position: absolute;
-          bottom: 13px;
-          right: -12px;
-
-        }
       }
-    }
-  }
+    
       .box2 {
         width: 7em;
-        height: 30vh;
+        height: 3em;
         top:3em;
         position: relative;
         display: flex;
         flex-direction: column;
-        margin:10px;
+      } 
     
         .title {
           width: 100%;
           position: relative;
           display: flex;
           align-items: center;
-          height: 50px;
-          
+          height: 4em;
+        }
     
           .block2 {
-            width: 0%;
+            width: 40%;
+            left: -10px;
             height: inherit;
             background: #009ae0;
             z-index: 9999;
@@ -114,54 +104,37 @@
             font-family: 'Inter-Black';
             color: #fff;
             font-size: 75px;
-            -webkit-animation: mainFadeIn 1s forwards;
-            -o-animation: mainFadeIn 1s forwards;
-            animation: mainFadeIn 1s forwards;
+            -webkit-animation: mainFadeIn 0.75s ease forwards;
+            -o-animation: mainFadeIn 0.75s ease forwards;
+            animation: mainFadeIn 0.75s ease forwards;
             animation-delay: 0.2s;
             opacity: 0;
             display: flex;
             align-items: baseline;
             position: relative;
-    
-            span {
-              width:0px;
-              height: 0px;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              border-radius: 50%;
-    
-              
-              -webkit-animation: load .6s cubic-bezier(.74, .06, .4, .92) forwards;
-              animation: popIn .8s cubic-bezier(.74, .06, .4, .92) forwards;
-              animation-delay: 1s;
-              margin-left: 5px;
-              margin-top: -10px;
-              position: absolute;
-              bottom: 13px;
-              right: -12px;
-    
-            }
           }
-        }
-      }
+          
+        
+      
       .box3 {
-        width: 10em;
-        height: 30vh;
+        width: 7em;
+        height: 3.5em;
         top:6em;
         position: relative;
         display: flex;
         flex-direction: column;
-        margin:10px;
+      }
     
         .title {
           width: 100%;
           position: relative;
           display: flex;
           align-items: center;
-          height: 50px;
-    
+          height: 4em;
+        }
           .block3 {
-            width: 0%;
+            width: 40%;
+            left: -10px;
             height: inherit;
             z-index: 9999;
             background: #009ae0;
@@ -174,54 +147,37 @@
             font-family: 'Inter-Black';
             color: #fff;
             font-size: 75px;
-            -webkit-animation: mainFadeIn 1s forwards;
-            -o-animation: mainFadeIn 1s forwards;
-            animation: mainFadeIn 1s forwards;
-            animation-delay: 0.3s;
+            -webkit-animation: mainFadeIn 0.75s ease forwards;
+            -o-animation: mainFadeIn 0.75s ease forwards;
+            animation: mainFadeIn 0.75s ease forwards;
+            animation-delay: 0.1s;
             opacity: 0;
             display: flex;
             align-items: baseline;
             position: relative;
-    
-            span {
-              width:0px;
-              height: 0px;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              border-radius: 50%;
-    
-              
-              -webkit-animation: load .6s cubic-bezier(.74, .06, .4, .92) forwards;
-              animation: popIn .8s cubic-bezier(.74, .06, .4, .92) forwards;
-              animation-delay: 1s;
-              margin-left: 5px;
-              margin-top: -10px;
-              position: absolute;
-              bottom: 13px;
-              right: -12px;
-    
-            }
           }
-        }
-      }
+           
+          
+        
+      
       .box4 {
-        width: 2em;
-        height: 30vh;
+        width: 7em;
+        height: 3em;
         top:9em;
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-left:10px;
-    
+      }
         .title {
           width: 100%;
           position: relative;
           display: flex;
           align-items: center;
-          height: 50px;
-    
+          height: 4em;
+        }
           .block4 {
-            width: 0%;
+            width: 40%;
+            left: -10px;
             height: inherit;
             z-index: 9999;
             background: #009ae0;
@@ -234,36 +190,37 @@
             font-family: 'Inter-Black';
             color: #fff;
             font-size: 75px;
-            -webkit-animation: mainFadeIn 1s forwards;
-            -o-animation: mainFadeIn 1s forwards;
-            animation: mainFadeIn 1s forwards;
-            animation-delay: 0.2s;
+            -webkit-animation: mainFadeIn 0.75s ease forwards;
+            -o-animation: mainFadeIn 0.75s ease forwards;
+            animation: mainFadeIn 0.75s ease forwards;
+            animation-delay: 0.4s;
             opacity: 0;
             display: flex;
             align-items: baseline;
             position: relative;
           }
-        }
-      }
+        
+      
       .box5 {
-        width: 13em;
-        height: 30vh;
+        width: 7em;
+        height: 3em;
         top:12em;
         position: relative;
         display: flex;
         flex-direction: column;
-        margin:10px;
+      }
     
         .title {
           width: 100%;
           position: relative;
           display: flex;
           align-items: center;
-          height: 50px;
+          height: 4em;
           
-    
+        }
           .block5 {
-            width: 0%;
+            width: 40%;
+            left: -10px;
             height: inherit;
             z-index: 9999;
             background: #009ae0;
@@ -277,82 +234,26 @@
             font-family: 'Inter-Black';
             color: #fff;
             font-size: 75px;
-            -webkit-animation: mainFadeIn 1s forwards;
-            -o-animation: mainFadeIn 1s forwards;
-            animation: mainFadeIn 1s forwards;
+            -webkit-animation: mainFadeIn 0.75s ease forwards;
+            -o-animation: mainFadeIn 0.75s ease forwards;
+            animation: mainFadeIn 0.75s ease forwards;
             animation-delay: 0.3s;
             opacity: 0;
             display: flex;
             align-items: baseline;
             position: relative;
           }
-        }
-      }
-    .role {
-      width: 100%;
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 30px;
-      margin-top: -10px;
-
-      .block {
-        width: 0%;
-        height: inherit;
-        background: #e91e63;
-        position: absolute;
-        animation: secBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
-        animation-delay: 1s;
-        display: flex;
-      }
-
-      .flyinp {
-        animation: secFadeIn 1s forwards;
-        animation-delay: 2s;
-        opacity: 0;
-         font-weight: 400;
-        font-family: 'Lato';
-        color: #000;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-      }
-    }
-}
 
 
-
-
-
-@keyframes mainBlock {
-  0% {
-    width: 0%;
-    right: 0;
-
-  }
-  30% {
-    width: 100%;
-    right: 0;
-
-  }
-  100% {
-    width: 0%;
-    right: 100%;
-  }
-}
 
 @keyframes mainFadeIn {
   0% {
     opacity: 1;
-    left: 0vw;
-  }
-  50% {
-    opacity: 1;
-    left: 8vw;
+    left: -3em;
   }
   100% {
     opacity: 1;
-    left: 8vw;
+    left: 1em;
   }
 }
 
@@ -382,7 +283,44 @@
   }
 }
 
+@media (max-width: 560px){
+  .flyinh1 {
+    font-size: 60px;
+  }
+  .flyinh12 {
+    font-size: 60px;
+  }
+  .flyinh13 {
+    font-size: 60px;
+  }
+  .flyinh14 {
+    font-size: 60px;
+  }
+  .flyinh15 {
+    font-size: 60px;
+  }
+}
 
+@keyframes mainBlock12 {
+  0% {
+    width: 0%;
+    right: 0;
 
+  }
+  30% {
+    width: 100%;
+    right: 0;
 
+  }
+  100% {
+    width: 0%;
+    right: 100%;
+  }
+}
+
+@media (min-width: 900px){
+  .mastercontainer{
+    left: 1000px;
+  }
+}
 
