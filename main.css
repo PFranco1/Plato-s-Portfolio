@@ -471,6 +471,9 @@ body {
   }
   .contactcontainer tr td{
     padding-top: 40px;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
   }
   .contactcontainer textarea{
     font-family: 'Inter-Regular';
