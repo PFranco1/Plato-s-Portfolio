@@ -101,7 +101,7 @@
         --gap: 40px;
 
         position: fixed;
-        z-index: 9998;
+        z-index: 1000;
         inset: 0 0 0 0%;
         text-align: center;
 
@@ -368,10 +368,10 @@ body {
   }
   @media screen and (max-width:560px) and (orientation: portrait){
     main{
-    height: 120vh;
+    height: 200vh;
     }
     body.contact main{
-      height: 150vh;
+      height: 200vh;
     }
   }
   
