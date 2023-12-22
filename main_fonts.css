@@ -50,7 +50,7 @@
       .block {
         width: 40%;
         left: -10px;
-        z-index: 9999;
+        z-index: 999;
         height: inherit;
         background: #009ae0;
         position: absolute;
@@ -94,7 +94,7 @@
             left: -10px;
             height: inherit;
             background: #009ae0;
-            z-index: 9999;
+            z-index: 999;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
             display: flex;
@@ -136,7 +136,7 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            z-index: 9999;
+            z-index: 999;
             background: #009ae0;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
@@ -179,7 +179,7 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            z-index: 9999;
+            z-index: 999;
             background: #009ae0;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
@@ -222,7 +222,7 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            z-index: 9999;
+            z-index: 999;
             background: #009ae0;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
