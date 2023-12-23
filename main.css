@@ -82,6 +82,8 @@
 }
 
 .primary-navigation a{
+    font-family: "Inter-Black";
+    font-size: 20px;
     text-decoration: none;
     color: #fff;
 }
