@@ -305,7 +305,7 @@ body {
     position: absolute;
     overflow-x: hidden;
     top: 0;
-    height: 140vh;
+    height: 130vh;
     width: 100%;
     display: flex;
     flex-direction: column;
