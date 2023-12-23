@@ -3,9 +3,6 @@
   font-family:"Inter-Regular";
   src: url("./Inter-4.0/web/Inter-Regular.woff2")
 }
-
-
-
 .loader-wrapper{
     position: fixed;
     z-index: 9999;
@@ -23,14 +20,11 @@
     display: flex;
     gap: var(--gap, 30px);
 }
-
-
 .logo{
     margin: 0.5rem;
     width: 30px;
     height: 30px;
 }
-
 .primary-header{
     align-items: center;
     justify-content: space-between;
@@ -43,7 +37,7 @@
     background: #0084bf;
 }
 .primary-navigation span{
-  font-size: 20px;
+  font-size: 25px;
   font-family: "inter-black";
 }
 .contact-info{
@@ -84,14 +78,12 @@
       backdrop-filter: blur(0.4rem);
     }
 }
-
 .primary-navigation a{
     font-family: "Inter-Black";
     font-size: 20px;
     text-decoration: none;
     color: #fff;
 }
-
 .primary-navigation a > [aria-hidden="true"]  {
     margin-inline-end: 12px;
     font-family: "Inter-Regular";
@@ -99,7 +91,6 @@
 .mobile-nav-toggle {
     display: none;
 }
-
 @media (max-width: 560px){
     /*holds page together*/
     .primary-navigation{
@@ -171,14 +162,12 @@
         width: 27.5px;
       }  
 }
-
 @media (min-width: 560px) and (max-width: 55em){
     .primary-navigation a > [aria-hidden]{
         display: none;
         font-family: "Inter-Regular";
     }  
 }
-
 @media (min-width: 560px){
     .primary-navigation{
         padding-block: 23px;
@@ -186,13 +175,11 @@
         font-family: "Inter-Regular";
     }
 }
-
 /* background area*/
 body {
     background-color:#0084bf;
     overflow-x: hidden;
  }
-
 /*text intro*/
 .TI {
     font-family: "Inter-Regular";
@@ -286,20 +273,16 @@ body {
   span.fade:nth-child(18) {
     animation: fade-in 1s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
-
-  
   @keyframes fade-in {
     100% {
       opacity: 1;
       filter: blur(0);
     }
   }
-
 .mission{
   font-family: "Inter-Regular";
   font-size: 22px;
 }
-
  /* content area*/
  * {
     box-sizing: border-box;
@@ -317,9 +300,6 @@ body {
     font-size: 5rem;
     animation: fadeIn 2s ease forwards;
   }
-  
-
-  
   main {
     position: absolute;
     overflow-x: hidden;
@@ -337,8 +317,6 @@ body {
     animation: animate 0s ease-in forwards;
     animation-duration: 0s; /* Adjust the animation duration as needed */
   }
-
-  
   /* Page-specific styles */
   body.projects main {
     position: absolute;
@@ -350,24 +328,17 @@ body {
     align-items: center;
     background-color: lightblue; /* Change to your desired background color */
   }
-  
   body.resume main {
     background-color: lightgreen; /* Change to your desired background color */
     display: flex;
-
   }
-  
   body.contact main {
     background-color: #0099e0; /* Change to your desired background color */
     height: 100vh;
   }
-
-  
-
   body.index main{
     overflow-x: hidden;
   }
-
   @media (max-height: 700px) and (orientation: landscape){
     main {
       height: 300vh;
@@ -384,14 +355,10 @@ body {
       height: 200vh;
     }
   }
-  
-  
-
   .content {
     padding: 0px;
     text-align: center;
   }
-
   .image{
     justify-content: center;
     align-items: center;
@@ -399,13 +366,11 @@ body {
     height: 416px;
     padding: 0px;
   }
- 
   .contactcontainer{
     font-family:"Inter-Regular";
     width: 80%;
     margin: 50px, auto;
   }
-
   .contact-box{
     display: flex;
     background: #fff;
@@ -485,7 +450,6 @@ body {
   .contactcontainer textarea{
     font-family: 'Inter-Regular';
   }
-
   @media (max-width: 560px){
     .contactcontainer{
       
@@ -504,7 +468,6 @@ body {
       display: block;
     }
   }
-
   @keyframes animate {
     0% {
         transform: scale(.9, 0.00005);
@@ -516,7 +479,6 @@ body {
         transform: scale(1, 1);
       } 
   }
-
   .intro {
     height: 100vh;
     margin: 0;
@@ -526,8 +488,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-
-  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -538,7 +498,6 @@ body {
       transform: translateY(-50%);
     }
   }
-  
   @keyframes fadeInText {
     from {
       opacity: 0;
