@@ -320,7 +320,7 @@ body {
   }
   @media (max-height: 700px) and (orientation: landscape){
     main {
-      height: 300vh;
+      height: 250vh;
     }
     body.contact main{
       height: 300vh;
