@@ -244,6 +244,13 @@
             position: relative;
           }
 
+          .contactcontainer tr td{
+            padding-top: 40px;
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+          }
+
 
 
 @keyframes mainFadeIn {
