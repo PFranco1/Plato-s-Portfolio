@@ -327,7 +327,7 @@ body {
     background-color: lightblue;
   }
   body.contact main {
-    background-color: #000; /* Change to your desired background color */
+    background-color: #000000; /* Change to your desired background color */
     height: 130vh;
   }
   body.index main{
@@ -346,7 +346,7 @@ body {
       height: 120vh;
     }
     body.contact main{
-      height: 200vh;
+      height: 120vh;
     }
   }
   .content {
@@ -362,6 +362,7 @@ body {
   }
   .contactcontainer{
     font-family:"Inter-Regular";
+    color: #fff;
     width: 80%;
     margin: 50px, auto;
   }
@@ -376,7 +377,7 @@ body {
   .contact-right{
     flex-basis: 40%;
     padding: 40px;
-    background: #000;
+    background: #585858;
     color: #fff;
   }
   .contactcontainer h1{
