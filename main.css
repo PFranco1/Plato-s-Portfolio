@@ -33,13 +33,14 @@
 .primary-navigation{
     list-style: none;
     padding: 0;
-    margin: 0;
-    background: #0084bf;
+    margin: 0px;
+    background: hsla(0, 0%, 0%, 0.5);
     font-family: "inter-black";
 }
 .primary-navigation span{
-  font-size: 25px;
+  font-size: 20px;
   font-family: "inter-black";
+  color: #000;
 }
 .contact-info{
   font-size: 16px;
@@ -48,16 +49,17 @@
   height: 100%;
   gap: 30px;
   text-decoration: none;
+  
 }
 .contact-info a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 .misc-text{
   font-size: 16px;
   font-family: "Inter-Regular";
   padding-bottom: 10px;
-  color: #fff
+  color: #000
 }
 .bottom-banner-background{
   position: absolute;
@@ -65,17 +67,19 @@
   align-items: center;
   justify-content: center;
   padding-block: 16px;
-  padding-inline: clamp(50px,100vw, 100vw);
+  padding-inline: clamp(3rem,10vw, 10rem);
   bottom: clamp(0%, 0%, 50px);
-  background: #0084bf;
+  background: hsla(0, 0%, 0%, 0.5);
+  margin-bottom: 1rem;
 }
 @supports (backdrop-filter: blur(1rem)){
     .primary-navigation{
-        background: hsla(199, 100%, 37%, .85);
+        background: hsla(0, 0%, 100%, 0.3);
         backdrop-filter: blur(0.4rem);
+        
     }
     .bottom-banner-background{
-      background: hsla(199, 100%, 37%, .85);
+      background: hsla(0, 0%, 100%, 0.3);
       backdrop-filter: blur(0.4rem);
     }
 }
@@ -83,7 +87,7 @@
     font-family: "Inter-Regular";
     font-size: 20px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 .primary-navigation a > [aria-hidden="true"]  {
     margin-inline-end: 12px;
@@ -172,14 +176,15 @@
 @media (min-width: 560px){
     .primary-navigation{
         padding-block: 23px;
-        padding-inline: clamp(3rem,100vw, 100vw);
+        padding-inline: clamp(3rem,10vw, 10rem);
         font-family: "Inter-Regular";
     }
 }
 /* background area*/
 body {
-    background-color:#0084bf;
+    background-color:#fff;
     overflow-x: hidden;
+    margin: 0;
  }
 /*text intro*/
 .TI {
@@ -288,7 +293,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #009ae0;
+    background-color: #000;
     transform: scale(0, 0);
     animation: animate .9s ease-in forwards 2.5s;
   }
@@ -298,29 +303,33 @@ body {
   }
   /* Page-specific styles */
   body.projects main {
+   
+    height: 550vh;
+    margin: 0;
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    background-color: #fff /* Change to your desired background color */
+  }
+  body.resume main {
     position: absolute;
     top: 0;
-    height: 200vh;
+    height: 150vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue; /* Change to your desired background color */
-  }
-  body.resume main {
-    background-color: lightgreen; /* Change to your desired background color */
-    display: flex;
+    background-color: lightblue;
   }
   body.contact main {
     background-color: #0099e0; /* Change to your desired background color */
-    height: 100vh;
+    height: 130vh;
   }
   body.index main{
     overflow-x: hidden;
   }
   @media (max-height: 700px) and (orientation: landscape){
     main {
-      height: 250vh;
+      height: 200vh;
     }
     body.contact main{
       height: 300vh;
@@ -328,14 +337,14 @@ body {
   }
   @media (max-width:560px) and (orientation: portrait){
     main{
-      height: 120vh;
+      height: 220vh;
     }
     body.contact main{
       height: 200vh;
     }
   }
   .content {
-    padding: 0px;
+    padding: 10px;
     text-align: center;
   }
   .image{

@@ -37,3 +37,17 @@ function sendEmail(){
   message => alert(message)
 );
 }
+$(function() {  
+  $('article').viewportChecker({
+    classToAdd: 'current',
+    repeat: true,
+    offset: '50%'
+  });
+});
+
+jQuery(document).ready(function () {
+	jQuery(".content").append(
+		"<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
+	);
+}); 
+

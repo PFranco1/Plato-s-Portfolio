@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal Portfolio Projects">
     <title>Plato Franco</title>
+    <link rel="stylesheet" type="text/css" href="circles.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="server.js" defer></script>
+    <script src="server.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(".content").append(
+                "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
+            );
+        }); 
+    </script>
 </head>
 <body class="resume">
     <div class="container">
         <div class="intro">
         </div>
         <main>
-            <div class="content">
+        <div class="content">
             </div>
             <header class="primary-header flex">
                 <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -47,8 +56,6 @@
                     </ul>
                 </nav>
             </header>
-            <h1 style="text-align:center;">Plato's Website - Resume</h1>
-            <p style="text-align:center;">Web information</p>
             <div class="bottom-banner-background">
                 <h3 class="misc-text">
                     Contact Info

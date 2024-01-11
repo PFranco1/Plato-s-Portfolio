@@ -10,6 +10,7 @@
   src: url("./Inter-4.0/web/Inter-Regular.woff2")
 }
 .mastercontainer{
+  margin-top: 9rem;
   width: 90%;
   display: flex;
 }
@@ -39,17 +40,18 @@
       .mainblock{
         width: 100%;
         position: absolute;
+        z-index: -2;
         height: 50%;
         display: flex;
         left: 0px;
-        background: #009ae0;
+        background: #000;
       }
       .block {
         width: 40%;
         left: -10px;
-        z-index: 999;
+        z-index: 1;
         height: inherit;
-        background: #009ae0;
+        background: #000;
         position: absolute;
         animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
         display: flex;
@@ -61,7 +63,7 @@
         -webkit-animation: mainFadeIn 0.75s ease forwards;
         -o-animation: mainFadeIn 0.75s ease forwards;
         animation: mainFadeIn 0.75s ease forwards;
-        animation-delay: 0.2s;
+        animation-delay: 0.1s;
         opacity: 0;
         display: flex;
         align-items: baseline;
@@ -86,8 +88,8 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            background: #009ae0;
-            z-index: 999;
+            background: #000;
+            z-index: 1;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
             display: flex;
@@ -124,8 +126,8 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            z-index: 999;
-            background: #009ae0;
+            z-index: 1;
+            background: #000;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
             display: flex;
@@ -137,7 +139,7 @@
             -webkit-animation: mainFadeIn 0.75s ease forwards;
             -o-animation: mainFadeIn 0.75s ease forwards;
             animation: mainFadeIn 0.75s ease forwards;
-            animation-delay: 0.1s;
+            animation-delay: 0.3s;
             opacity: 0;
             display: flex;
             align-items: baseline;
@@ -162,8 +164,8 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            z-index: 999;
-            background: #009ae0;
+            z-index: 1;
+            background: #000;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
             display: flex;
@@ -200,8 +202,8 @@
             width: 40%;
             left: -10px;
             height: inherit;
-            z-index: 999;
-            background: #009ae0;
+            z-index: 1;
+            background: #000;
             position: absolute;
             animation: mainBlock .6s cubic-bezier(.74, .06, .4, .92) forwards;
             display: flex;
@@ -213,21 +215,20 @@
             -webkit-animation: mainFadeIn 0.75s ease forwards;
             -o-animation: mainFadeIn 0.75s ease forwards;
             animation: mainFadeIn 0.75s ease forwards;
-            animation-delay: 0.3s;
+            animation-delay: 0.1s;
             opacity: 0;
             display: flex;
             align-items: baseline;
             position: relative;
           }
-          .contactcontainer tr td{
+          .contactcontainer tr td a{
             padding-top: 40px;
             text-decoration: none;
             color: inherit;
             cursor: default;
           }
-          .contact-right a{
+          .contact-right{
             text-decoration: none;
-            color: inherit;
             cursor: default;
           }
 @keyframes mainFadeIn {
