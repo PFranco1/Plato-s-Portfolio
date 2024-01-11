@@ -17,6 +17,8 @@
 
 .containerprojects {
   scroll-snap-type: y mandatory;
+  position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -35,12 +37,12 @@
   
 }
 
-.containerprojects div:nth-of-type(even) {
+.containerprojects div:nth-of-type(odd) {
   color: white;
   background: black;
 }
 
-.containerprojectsdiv:nth-of-type(odd) {
+.containerprojectsdiv:nth-of-type(even) {
   color: black;
   background: white;
 }
