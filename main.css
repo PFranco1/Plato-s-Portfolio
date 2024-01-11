@@ -106,13 +106,19 @@
         z-index: 1000;
         inset: 0 0 0 0%;
         text-align: center;
-
         flex-direction: column;
         padding: min(300px, 160px) 32px;
 
         transform: translateX(0%);
         transition: transform 250ms ease-out;
     }
+    .primary-navigation a{
+      color: #fff;
+    }
+    .primary-navigation span{
+      color: #fff;
+    }
+
 
     .primary-navigation[data-visible="false"] {
         transform: translateX(100%);
@@ -135,7 +141,7 @@
       .mobile-nav-toggle .bar {
         width: 25px;
         height: 3px;
-        background-color: #333;
+        background-color: #c6c6c6;
         transition: all 100ms ease-in-out;
         border-radius: 20px;
       }
@@ -321,7 +327,7 @@ body {
     background-color: lightblue;
   }
   body.contact main {
-    background-color: #0099e0; /* Change to your desired background color */
+    background-color: #000; /* Change to your desired background color */
     height: 130vh;
   }
   body.index main{
