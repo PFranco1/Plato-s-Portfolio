@@ -34,7 +34,7 @@
     list-style: none;
     padding: 0;
     margin: 0px;
-    background: hsla(0, 0%, 100%, 0.5);
+    background: hsla(0, 0%, 100%, 0.9);
     font-family: "inter-black";
 }
 .primary-navigation span{
@@ -111,12 +111,6 @@
 
         transform: translateX(0%);
         transition: transform 250ms ease-out;
-    }
-    .primary-navigation a{
-      color: #fff;
-    }
-    .primary-navigation span{
-      color: #fff;
     }
 
 
