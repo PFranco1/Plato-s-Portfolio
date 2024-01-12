@@ -320,7 +320,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue;
+    background-color: #000;
   }
   body.contact main {
     background-color: #000000; /* Change to your desired background color */
