@@ -18,25 +18,40 @@ navToggle.addEventListener('click', () => {
 
 //Create 2 new email addresses to send and recive emails
 
-function sendEmail(){
-  var email = document.getElementById("name").value;
+function sendEmail() {
+  var email = document.getElementById("email").value;
   var phone = document.getElementById("phone").value;
-  var name = document.getElementById("email").value;
+  var name = document.getElementById("name").value;
   var subject = document.getElementById("subject").value;
 
-  var completeSubject = "Email: " + email + " | Phone: " + phone + " | Name: " + name + " | " + subject;
+  // Validate fields
+  if (!email || !phone || !name || !subject) {
+    alert("Please fill in all required fields");
+    return;
+  }
+
+  var completeSubject =
+    "Email: " +
+    email +
+    " | Phone: " +
+    phone +
+    " | Name: " +
+    name +
+    " | " +
+    subject;
 
   Email.send({
     SecureToken: "f011916c-36f5-41bb-8c12-951d8fb8c308",
     Port: "2525",
-    To : 'pfranco5@utexas.edu',
-    From : 'spamemail2093411@gmail.com',
-    Subject : completeSubject,
-    Body : document.getElementById("body").value
-}).then(
-  message => alert(message)
-);
+    To: "pfranco5@utexas.edu",
+    From: "spamemail2093411@gmail.com",
+    Subject: completeSubject,
+    Body: document.getElementById("body").value,
+  }).then((message) => alert(message));
 }
+
+
+
 $(function() {  
   $('article').viewportChecker({
     classToAdd: 'current',
