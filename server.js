@@ -64,5 +64,9 @@ jQuery(document).ready(function () {
 	jQuery(".content").append(
 		"<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
 	);
+  jQuery(".contentlines").append(
+		"<ul class='lines'><li></li><li></li><li></li></ul>"
+	);
 }); 
+
 
