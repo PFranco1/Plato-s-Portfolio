@@ -130,6 +130,36 @@
 	background: #fff;
 }
 .circles li:nth-child(11) {
+	left: 10%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+	border-radius: 50%;
+	border-top-left-radius: 0 !important;
+	background: #fff;
+}
+.circles li:nth-child(12) {
+	left: 30%;
+	width: 20px;
+	height: 20px;
+	animation-delay: 0s;
+	animation-duration: 35s;
+	border-radius: 50%;
+	border-top-left-radius: 0 !important;
+	background: #fff;
+}
+.circles li:nth-child(13) {
+	left: 60%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+	border-radius: 50%;
+	border-top-left-radius: 0 !important;
+	background: #fff;
+}
+.circles li:nth-child(14) {
 	left: 50%;
 	width: 40px;
 	height: 40px;
@@ -138,7 +168,7 @@
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background: #fff;
 }
-.circles li:nth-child(12) {
+.circles li:nth-child(15) {
 	left: 30%;
 	width: 60px;
 	height: 60px;
@@ -147,7 +177,7 @@
 	border-top-left-radius: 0 !important;
 	background: #fff;
 }
-.circles li:nth-child(13) {
+.circles li:nth-child(16) {
 	left: 60%;
 	width: 30px;
 	height: 30px;

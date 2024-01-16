@@ -25,7 +25,7 @@ function sendEmail() {
   var subject = document.getElementById("subject").value;
 
   // Validate fields
-  if (!email || !phone || !name || !subject) {
+  if (!email || !name || !subject) {
     alert("Please fill in all required fields");
     return;
   }
