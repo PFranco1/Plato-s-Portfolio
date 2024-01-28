@@ -310,7 +310,7 @@ body {
     margin: 0;
     font-family: "Inter-Regular";
     font-size: 16px;
-    background-color: #fff /* Change to your desired background color */
+    background-color: #000 /* Change to your desired background color */
   }
   body.resume main {
     position: absolute;
