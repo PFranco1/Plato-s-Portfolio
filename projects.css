@@ -12,15 +12,37 @@
 
 
 .containerprojects div{
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  block-size: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   block-size: 100%;
 }
 .containerprojects div a{
-  display: flex;
-  padding: .2rem;
-  position: relative;
   text-decoration: none;
   color: inherit;
   bottom: 0px;
+  text-align: center;
+}
+.containerprojects div h1 {
+  position: relative;
+  margin: 0px;
+  
+}
+.containerprojects div p{
+  display: flex;
+
+  margin-top: 0;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  bottom: 0;
+  text-align: center; 
+  justify-content: center;
 }
 
 .containerprojects {
