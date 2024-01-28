@@ -184,7 +184,7 @@
 }
 /* background area*/
 body {
-    background-color:#fff;
+    background-color:#000;
     overflow-x: hidden;
     margin: 0;
  }
@@ -323,7 +323,7 @@ body {
     background-color: #000;
   }
   body.contact main {
-    background-color: #000000; /* Change to your desired background color */
+    background-color: #000; /* Change to your desired background color */
     height: 130vh;
   }
   body.index main{
