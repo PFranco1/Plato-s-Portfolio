@@ -10,21 +10,19 @@
   src: url("./Inter-4.0/web/Inter-Regular.woff2")
 }
 
-
 .containerprojects div{
   position: relative;
   display: flex;
   text-decoration: none;
   color: inherit;
   block-size: 100%;
-  
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   block-size: 100%;
 }
 .containerprojects div a{
   text-decoration: none;
-  padding: .2rem;
   color: inherit;
   bottom: 0px;
   text-align: center;
