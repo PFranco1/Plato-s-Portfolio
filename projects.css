@@ -30,7 +30,7 @@
 .containerprojects div h1 {
   position: relative;
   margin: 0px;
-  
+  text-align: center;
 }
 .containerprojects div p{
   display: flex;
