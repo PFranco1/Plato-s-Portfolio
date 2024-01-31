@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
+@font-face{
+  font-family:"Inter-Black";
+  src: url("./Inter-4.0/web/Inter-Bold.woff2")
+}
+@font-face{
+  font-family:"Inter-Regular";
+  src: url("./Inter-4.0/web/Inter-Regular.woff2")
+}
+
+.text13{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  font-family: "Inter-Regular";
+  color: #fff;
+}

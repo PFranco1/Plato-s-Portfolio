@@ -60,9 +60,9 @@
         font-family: 'Inter-Black';
         color: #fff;
         font-size: 75px;
-        -webkit-animation: mainFadeIn 0.75s ease forwards;
-        -o-animation: mainFadeIn 0.75s ease forwards;
-        animation: mainFadeIn 0.75s ease forwards;
+        -webkit-animation: mainFadeInh1 0.75s ease forwards;
+        -o-animation: mainFadeInh1 0.75s ease forwards;
+        animation: mainFadeInh1 0.75s ease forwards;
         animation-delay: 0.1s;
         opacity: 0;
         display: flex;
@@ -185,7 +185,7 @@
           }
       .box5 {
         width: 7em;
-        height: 3em;
+        height: 7em;
         top:12em;
         position: relative;
         display: flex;
@@ -196,7 +196,7 @@
           position: relative;
           display: flex;
           align-items: center;
-          height: 4em;  
+          height: 6em;  
         }
           .block5 {
             width: 40%;
@@ -212,10 +212,10 @@
             font-family: 'Inter-Black';
             color: #fff;
             font-size: 75px;
-            -webkit-animation: mainFadeIn 0.75s ease forwards;
-            -o-animation: mainFadeIn 0.75s ease forwards;
-            animation: mainFadeIn 0.75s ease forwards;
-            animation-delay: 0.1s;
+            -webkit-animation: mainFadeInh15 1.2s ease forwards;
+            -o-animation: mainFadeInh15 1.2s ease forwards;
+            animation: mainFadeInh15 1.2s ease forwards;
+            animation-delay: .6s;
             opacity: 0;
             display: flex;
             align-items: baseline;
@@ -235,6 +235,26 @@
   0% {
     opacity: 1;
     left: -3em;
+  }
+  100% {
+    opacity: 1;
+    left: 1em;
+  }
+}
+@keyframes mainFadeInh1 {
+  0% {
+    opacity: 1;
+    left: -4em;
+  }
+  100% {
+    opacity: 1;
+    left: 1em;
+  }
+}
+@keyframes mainFadeInh15 {
+  0% {
+    opacity: 1;
+    left: -6em;
   }
   100% {
     opacity: 1;
