@@ -215,7 +215,7 @@
             -webkit-animation: mainFadeInh15 1.2s ease forwards;
             -o-animation: mainFadeInh15 1.2s ease forwards;
             animation: mainFadeInh15 1.2s ease forwards;
-            animation-delay: .6s;
+            animation-delay: .5s;
             opacity: 0;
             display: flex;
             align-items: baseline;
