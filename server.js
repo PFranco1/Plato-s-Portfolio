@@ -48,26 +48,41 @@ function sendEmail() {
     Subject: completeSubject,
     Body: document.getElementById("body").value,
   }).then((message) => alert(message));
-}
+};
 
 
 
-$(function() {  
-  $('article').viewportChecker({
-    classToAdd: 'current',
-    repeat: true,
-    offset: '50%'
-  });
-});
+
 
 jQuery(document).ready(function () {
-	jQuery(".content").append(
+	jQuery(".contentC").append(
 		"<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
 	);
   jQuery(".contentlines").append(
 		"<ul class='lines'><li></li><li></li><li></li></ul>"
 	);
 }); 
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) =>{
+    console.log(entry)
+    if (entry.isIntersecting){
+      if(entry.target.classList.contains('hidden')){
+      entry.target.classList.add('show');
+      }
+      if(entry.target.classList.contains('hidden1')){
+        entry.target.classList.add('fade');
+      }
+    } else{
+      //show is animation
+      entry.target.classList.remove('show','fade');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden, .hidden1');
+hiddenElements.forEach((el) => observer.observe(el));
 
 
 

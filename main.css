@@ -267,6 +267,10 @@ body {
       height: 150vh;
     }
   }
+  .contentC {
+    padding: 10px;
+    text-align: center;
+  }
   .content {
     padding: 10px;
     text-align: center;
