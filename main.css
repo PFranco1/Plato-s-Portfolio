@@ -34,7 +34,7 @@
     list-style: none;
     padding: 0;
     margin: 0px;
-    background: hsla(0, 0%, 100%, 0.9);
+    background: hsla(0, 0%, 100%, 1);
     font-family: "inter-black";
 }
 .primary-navigation span{
