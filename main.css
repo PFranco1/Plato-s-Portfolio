@@ -253,7 +253,7 @@ body {
   }
   @media (max-height: 700px) and (orientation: landscape){
     main {
-      height: 200vh;
+      height: 250vh;
     }
     body.contact main{
       height: 300vh;
@@ -261,7 +261,7 @@ body {
   }
   @media (max-width:560px) and (orientation: portrait){
     main{
-      height: 150vh;
+      height: 120vh;
     }
     body.contact main{
       height: 150vh;
