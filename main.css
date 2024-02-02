@@ -169,18 +169,9 @@
         width: 27.5px;
       }  
       @supports (backdrop-filter: blur(1rem)){
-        .mobile-nav-toggle .bar {
-          width: 25px;
-          height: 3px;
-        }
         .mobile-nav-toggle.active .bar:nth-child(1) {
           width: 25.5px;
-        }
-        
-        .mobile-nav-toggle.active .bar:nth-child(2) {
-           width: 0;
-        }
-        
+        }  
         .mobile-nav-toggle.active .bar:nth-child(3) {
           width: 25.5px;
         }  
