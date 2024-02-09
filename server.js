@@ -84,7 +84,41 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden, .hidden1');
 hiddenElements.forEach((el) => observer.observe(el));
 
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    console.log("longitude:", position.coords.longitude);
+    console.log("latitude:", position.coords.latitude);
+  });
+} else {
+  console.log("Geolocation is not supported by this device/browser.");
+}
 
+console.log(document.referrer);
+console.log(location.href);
+console.log(navigator.userAgent);
+fetch("https://ipapi.co/json/")
+.then(response => response.json())
+.then((responseJson) => {
+  console.log(responseJson);
+});
 
+{
+  "ip": "2409:4062:115:954b:211e:e74:5180:15ae",
+  "city": "Bhubaneswar",
+  "region": "Odisha",
+  "region_code": "OR",
+  "country": "IN",
+  "country_name": "India",
+  "continent_code": "AS",
+  "in_eu": false,
+  "postal": "751030",
+  "latitude": 20.2724,
+  "longitude": 85.8339,
+  "timezone": "Asia/Kolkata",
+  "utc_offset": "+0530",
+  "country_calling_code": "+91",
+  "currency": "INR",
+  "languages": "en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc",
+}
 
 
