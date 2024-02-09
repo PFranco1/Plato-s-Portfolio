@@ -39,7 +39,7 @@ function sendEmail() {
     name +
     " | " +
     subject;
-    
+
   Email.send({
     SecureToken: "ee323115-7348-4f75-8995-0c4477a085c0",
     Port: "2525",
@@ -84,23 +84,6 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden, .hidden1');
 hiddenElements.forEach((el) => observer.observe(el));
 
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    console.log("longitude:", position.coords.longitude);
-    console.log("latitude:", position.coords.latitude);
-  });
-} else {
-  console.log("Geolocation is not supported by this device/browser.");
-}
-
-console.log(document.referrer);
-console.log(location.href);
-console.log(navigator.userAgent);
-fetch("https://ipapi.co/json/")
-.then(response => response.json())
-.then((responseJson) => {
-  console.log(responseJson);
-});
 
 
 
