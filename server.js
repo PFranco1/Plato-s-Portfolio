@@ -43,8 +43,8 @@ function sendEmail() {
   Email.send({
     SecureToken: "f011916c-36f5-41bb-8c12-951d8fb8c308",
     Port: "2525",
-    To: "pfranco5@utexas.edu",
-    From: "spamemail2093411@gmail.com",
+    To: "inboxportfolio13@gmail.com",
+    From: "sendportfolio13@gmail.com",
     Subject: completeSubject,
     Body: document.getElementById("body").value,
   }).then((message) => alert(message));
