@@ -102,7 +102,7 @@ fetch("https://ipapi.co/json/")
   console.log(responseJson);
 });
 
-{
+console.log(JSON.stringify({
   "ip": "2409:4062:115:954b:211e:e74:5180:15ae",
   "city": "Bhubaneswar",
   "region": "Odisha",
@@ -119,6 +119,6 @@ fetch("https://ipapi.co/json/")
   "country_calling_code": "+91",
   "currency": "INR",
   "languages": "en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc",
-}
+}));
 
 
