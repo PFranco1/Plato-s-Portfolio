@@ -9,13 +9,87 @@
   font-family:"Inter-Regular";
   src: url("./Inter-4.0/web/Inter-Regular.woff2")
 }
+@font-face{
+  font-family:"Inter-Italic";
+  src: url("./Inter-4.0/web/Inter-LightItalic.woff2")
+}
+/*<link rel="stylesheet" type="text/css" href="background_lines.css">*/
 
-.text13{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  text-align: center;
-  z-index: 1;
+* {
   font-family: "Inter-Regular";
+}
+.Rcontainer{
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  padding: 1rem;
+}
+
+.Rbanner{
+  font-family:"Inter-Black";
+  position: relative;
+  margin-top: 8rem;
+  top: 0;
+  height: 0rem;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+.Rbanner2{
+  font-family:"Inter-Black";
+  position: relative;
+  top: 0;
+  height: 0.1rem;
+  margin-top:0.1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+.Rheader{
+  position: relative;
+  bottom: 0%;
   color: #fff;
 }
+
+.marginzero{
+  margin: 0;
+}
+.invizmargin{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.resume_content{
+  position: relative;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+@media (max-width:560px) and (orientation: portrait){
+  .Rbanner{
+    margin-top: 5rem;
+    width: 100%;
+    left: 0;
+  }
+  .Rheader{
+    top: 65%;
+    text-align: center;
+  }
+}
+
+.italic{
+  font-family: "Inter-Italic";
+  margin-bottom: 0.5rem;
+}
+.italic2{
+  font-family: "Inter-Italic";
+}
+
+.bold{
+  font-family:"Inter-Black"
+}
+
+
+
+

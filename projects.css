@@ -67,11 +67,13 @@
 }
 
 .containerprojects div:nth-of-type(odd) {
+  scroll-snap-type: y mandatory;
   color: white;
   background: black;
 }
 
 .containerprojectsdiv:nth-of-type(even) {
+  scroll-snap-type: y mandatory;
   color: black;
   background: white;
 }

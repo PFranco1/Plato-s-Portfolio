@@ -26,6 +26,7 @@
     height: 30px;
 }
 .primary-header{
+    z-index: 999;
     align-items: center;
     justify-content: space-between;
     
@@ -81,6 +82,7 @@
     .bottom-banner-background{
       background: hsla(0, 0%, 100%, 0.3);
       backdrop-filter: blur(0.4rem);
+      
     }
 }
 .primary-navigation a{
@@ -245,7 +247,7 @@ body {
   body.resume main {
     position: absolute;
     top: 0;
-    height: 150vh;
+    height: clamp(300vh, 350vh, 500vh);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -263,6 +265,9 @@ body {
     main {
       height: 250vh;
     }
+    body.resume main {
+      height: 400vh;
+    }
     body.contact main{
       height: 300vh;
     }
@@ -270,6 +275,9 @@ body {
   @media (max-width:560px) and (orientation: portrait){
     main{
       height: 150vh;
+    }
+    body.resume main {
+      height: 500vh;
     }
     body.contact main{
       height: 150vh;
@@ -376,6 +384,9 @@ body {
     font-family: 'Inter-Regular';
   }
   @media (max-width: 560px){
+    body.resume main {
+      height: 500vh;
+    }
     .contactcontainer{
       
       flex-direction: column;
