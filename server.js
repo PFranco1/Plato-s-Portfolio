@@ -39,9 +39,9 @@ function sendEmail() {
     name +
     " | " +
     subject;
-
+    
   Email.send({
-    SecureToken: "f011916c-36f5-41bb-8c12-951d8fb8c308",
+    SecureToken: "ee323115-7348-4f75-8995-0c4477a085c0",
     Port: "2525",
     To: "inboxportfolio13@gmail.com",
     From: "sendportfolio13@gmail.com",
