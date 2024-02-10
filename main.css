@@ -33,12 +33,14 @@
 }
 .primary-navigation{
     list-style: none;
+    
     padding: 0;
     margin: 0px;
     background: hsla(0, 0%, 100%, 1);
     font-family: "inter-black";
 }
 .primary-navigation span{
+  
   font-size: 20px;
   font-family: "inter-black";
   color: #000;
@@ -89,6 +91,7 @@
 .primary-navigation a{
     font-family: "Inter-Regular";
     font-size: 20px;
+    
     text-decoration: none;
     color: #000;
 }
@@ -106,12 +109,11 @@
         --gap: 40px;
 
         position: fixed;
-        z-index: 1000;
+        
         inset: 0 0 0 0%;
         text-align: center;
         flex-direction: column;
         padding: min(300px, 160px) 32px;
-
         transform: translateX(0%);
         transition: transform 250ms ease-out;
     }
@@ -119,6 +121,7 @@
 
     .primary-navigation[data-visible="false"] {
         transform: translateX(100%);
+        
     }
 
     .mobile-nav-toggle{
@@ -189,6 +192,7 @@
 @media (min-width: 560px){
     .primary-navigation{
         padding-block: 23px;
+        z-index: 1000;
         padding-inline: clamp(3rem,10vw, 10rem);
         font-family: "Inter-Regular";
     }
