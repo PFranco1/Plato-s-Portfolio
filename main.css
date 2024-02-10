@@ -400,9 +400,6 @@ body {
     .contact-box{
       display: block;
     }
-    main{
-      height: 100vh;
-    }
     @media (max-width: 392px) {
       body.resume main {
         height: 480vh;
