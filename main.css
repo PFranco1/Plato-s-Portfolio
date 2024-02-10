@@ -270,7 +270,7 @@ body {
       height: 300vh;
     }
     body.resume main{
-      height: 1000vh;
+      height: 900vh;
     }
   }
   @media (max-width:560px) and (orientation: portrait){
