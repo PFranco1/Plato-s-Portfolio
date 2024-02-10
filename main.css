@@ -63,6 +63,7 @@
   color: #000
 }
 .bottom-banner-background{
+  z-index: 999;
   position: absolute;
   text-align: center;
   align-items: center;
@@ -247,7 +248,7 @@ body {
   body.resume main {
     position: absolute;
     top: 0;
-    height: clamp(300vh, 350vh, 500vh);
+    height: 300vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -385,7 +386,7 @@ body {
   }
   @media (max-width: 560px){
     body.resume main {
-      height: 500vh;
+      height: 410vh;
     }
     .contactcontainer{
       

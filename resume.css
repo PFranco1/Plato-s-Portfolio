@@ -13,7 +13,6 @@
   font-family:"Inter-Italic";
   src: url("./Inter-4.0/web/Inter-LightItalic.woff2")
 }
-/*<link rel="stylesheet" type="text/css" href="background_lines.css">*/
 
 * {
   font-family: "Inter-Regular";
@@ -27,8 +26,10 @@
 
 .Rbanner{
   font-family:"Inter-Black";
+  z-index: 999;
   position: relative;
   margin-top: 8rem;
+  margin-bottom: 6rem;
   top: 0;
   height: 0rem;
   width: 100%;
@@ -54,14 +55,18 @@
 
 .marginzero{
   margin: 0;
+  text-decoration: none;
+  color: #fff;
 }
 .invizmargin{
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .resume_content{
   position: relative;
+  z-index: 999;
   margin-top: 2rem;
   color: #fff;
 }
@@ -90,6 +95,29 @@
   font-family:"Inter-Black"
 }
 
+.top{
+  margin-top: 1rem;
+}
+.bottom{
+  margin-bottom: 1rem;
+}
 
+.date_right_align {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.date {
+  text-align: right !important;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.regular{
+  font-family: "Inter-Regular";
+}
 
 
