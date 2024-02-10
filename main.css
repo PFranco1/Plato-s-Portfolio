@@ -248,7 +248,7 @@ body {
   body.resume main {
     position: absolute;
     top: 0;
-    height: 300vh;
+    height: 310vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -265,9 +265,6 @@ body {
   @media (max-height: 700px) and (orientation: landscape){
     main {
       height: 250vh;
-    }
-    body.resume main {
-      height: 400vh;
     }
     body.contact main{
       height: 300vh;
@@ -386,10 +383,9 @@ body {
   }
   @media (max-width: 560px){
     body.resume main {
-      height: 410vh;
+      height: 380vh;
     }
     .contactcontainer{
-      
       flex-direction: column;
     }
     .contact-left,.contact-right{
@@ -403,6 +399,14 @@ body {
     }
     .contact-box{
       display: block;
+    }
+    main{
+      height: 100vh;
+    }
+    @media (max-width: 392px) {
+      body.resume main {
+        height: 480vh;
+      }
     }
   }
   @keyframes animate {
