@@ -46,8 +46,9 @@
 
 .containerprojects {
   scroll-snap-type: y mandatory;
+  scroll-snap-align: center;
   position: absolute;
-  z-index: -1;
+  flex: none;
   width: 100%;
   height: 100%;
 }
@@ -58,22 +59,19 @@
   scroll-snap-stop:always;
   scroll-behavior: smooth;
   
-  display: flex;
   align-items: center;
   justify-content: center;
 
-  height: 20%; /* Set a fixed height for each section */
+  height: 20%; 
   
 }
 
 .containerprojects div:nth-of-type(odd) {
-  scroll-snap-type: y mandatory;
   color: white;
   background: black;
 }
 
-.containerprojectsdiv:nth-of-type(even) {
-  scroll-snap-type: y mandatory;
+.containerprojects div:nth-of-type(even) {
   color: black;
   background: white;
 }
