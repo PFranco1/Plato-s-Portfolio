@@ -383,7 +383,7 @@ body {
   }
   @media (max-width: 560px){
     body.resume main {
-      height: 500vh;
+      height: 600vh;
     }
     .contactcontainer{
       flex-direction: column;
@@ -402,7 +402,7 @@ body {
     }
     @media (max-width: 392px) {
       body.resume main {
-        height: 480vh;
+        height: 650vh;
       }
     }
   }
