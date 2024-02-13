@@ -271,10 +271,10 @@ body {
       height: 250vh;
     }
     body.contact main{
-      height: 300vh;
+      height: 250vh;
     }
     body.resume main{
-      height: 900vh;
+      height: 850vh;
     }
   }
   @media (max-width:560px) and (orientation: portrait){
