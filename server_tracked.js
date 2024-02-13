@@ -1,3 +1,7 @@
+
+
+
+
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
     console.log("longitude:", position.coords.longitude);
@@ -80,6 +84,18 @@ getEmailContent()
     console.error('Error getting email content:', error);
   });
 
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+app.use(cors());
+
+// Your routes and other middleware configurations go here
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
 
 
 
