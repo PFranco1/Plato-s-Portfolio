@@ -390,7 +390,7 @@ body {
   }
   @media (max-width: 560px){
     body.resume main {
-      height: 600vh;
+      height: 180vh;
     }
     .contactcontainer{
       flex-direction: column;
