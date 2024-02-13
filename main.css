@@ -283,7 +283,6 @@ body {
     }
     body.resume main {
       height: 100vh;
-      font-size: 60%;
     }
     body.contact main{
       height: 150vh;

@@ -42,7 +42,7 @@
   top: 0;
   height: 0.1rem;
   margin-top:0.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   width: 100%;
   text-align: center;
   background-color: white;
@@ -118,6 +118,21 @@
 }
 .regular{
   font-family: "Inter-Regular";
+}
+
+@media (max-width:560px) and (orientation: portrait){
+    .resume_content {
+      font-size: 60%;
+  }
+  .top{
+    margin-top: .6rem;
+  }
+  .bottom{
+    margin-bottom: .6rem;
+  }
+  .Rbanner2{
+   margin-bottom: 0rem;
+  }
 }
 
 
