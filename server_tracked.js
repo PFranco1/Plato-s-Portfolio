@@ -58,7 +58,7 @@ function getEmailContent() {
 }
 
 function sendDataToServer(data) {
-  fetch('https://yourserver.com/log', {
+  fetch('http://localhost:3000/log', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -84,18 +84,24 @@ getEmailContent()
     console.error('Error getting email content:', error);
   });
 
-const express = require('express');
-const cors = require('cors');
-
-const app = express();
-
-app.use(cors());
-
-// Your routes and other middleware configurations go here
-
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+  const express = require('express');
+  const cors = require('cors');
+  
+  const app = express();
+  
+  app.use(cors());
+  
+  app.post('/log', (req, res) => {
+    // Handle logging data received from the client
+    console.log(req.body);
+    res.sendStatus(200);
+  });
+  
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+  
 
 
 
