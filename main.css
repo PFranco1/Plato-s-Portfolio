@@ -274,7 +274,7 @@ body {
       height: 300vh;
     }
     body.resume main{
-      height: 900vh;
+      height: 700vh;
     }
   }
   @media (max-width:560px) and (orientation: portrait){
@@ -282,7 +282,8 @@ body {
       height: 150vh;
     }
     body.resume main {
-      height: 500vh;
+      height: 300vh;
+      font-size: 70%;
     }
     body.contact main{
       height: 150vh;
