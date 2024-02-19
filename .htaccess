@@ -1,2 +1,10 @@
 RewriteEngine On 
-RewriteRule ^(.+)$ $1.html [L]
+RewriteRule ^about$ about.html [L]
+RewriteRule ^projects$ projects.html [L]
+RewriteRule ^resume$ resume.html [L]
+RewriteRule ^contact$ contact.html [L]
+
+
+
+
+
