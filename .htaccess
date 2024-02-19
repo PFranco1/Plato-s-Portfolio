@@ -1,2 +1,2 @@
 RewriteEngine On 
-RewriteRule ^(.+) $1.html [L] 
+RewriteRule ^(.+)$ $1.html [L]
