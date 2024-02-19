@@ -314,7 +314,7 @@ body {
     background: #fff;
   }
   .contact-left{
-    flex-basis: 60%;
+    flex-basis: 100%;
     padding: 40px 60px;
   }
   .contact-right{
